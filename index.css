@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', serif;
+    font-weight: 400;
+    padding: 0;
+} 
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h3, h4, h5 {
+    font-weight: 400;
+}
+
+.relative {
+    position: relative;
+}
+
+.item-name,
+.summary-title, 
+.order-item h5, 
+.order-total h5 {
+    font-size: 28px;
+}
+
+.container {
+    width: 600px;
+    margin: auto
+}
+
+header {
+    height: 167px;
+    background: url("assets/bg.png");
+    background-size: cover;
+    padding: 46px;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin-bottom: 67px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.intro {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+#menu {
+    padding-inline: 46px;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    height: 140px;
+    width: 508px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+
+.item-ingredients {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-size: 20px;
+}
+
+.add-item-btn {
+    margin-left: auto;
+    border: 1.5px solid #dedede;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 50px;
+    font-size: 32px;
+    font-weight: 200;
+    color: #3C3C3C;
+    cursor: pointer;
+}
+
+#order-summary {
+    padding: 46px;
+    display: none;
+}
+
+.summary-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#order-container {
+    list-style: none;
+}
+
+.order-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order-item button {
+    font-size: 12px;
+    color: #bbbbbb;
+    border: none;
+    background: transparent;
+}
+
+.order-item p, .order-total p {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.order-total {
+    border-top: 2px solid #393333;
+    padding-block: 20px;
+    display: flex;
+}
+
+.order-btn {
+    width: 100%;
+    margin-top: 30px;
+    padding-block: 18px;
+    border-radius: 3px;
+    border: none;
+    background: #16DB99;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#card-details-container {
+    display: none;
+    position: fixed;
+    background: white;
+    width: 524px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    filter: drop-shadow(0px 0px 20px #757575) drop-shadow(0px 0px 20px #757575);
+}
+
+#cross-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    width: 32px;
+    aspect-ratio: 1;
+    border: none;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Arimo", sans-serif;
+    margin-bottom: 45px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+form input {
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arimo", sans-serif;
+    padding-inline: 25px;
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+}
+
+#thanks-note {
+    background: #ECFDF5;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 510px;
+    margin: auto;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+#thanks-note p {
+    font-size: 32px;
+    color: #065F46;
+}

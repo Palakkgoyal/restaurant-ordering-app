@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="logo">Jimmy's Diner</h1>
+                <p class="intro"><strong>The best burgers and pizzas in town</strong></p>
+            </header>
+            <main>
+                <section id="menu"></section>
+                <section id="order-summary">
+                    <h4 class="summary-title">Your Order</h4>
+                    <ul id="order-container"></ul>
+                    <div class="order-total">
+                        <h5>Total Price</h5>
+                        <p id="total-price-el"></p>
+                    </div>
+                    <button class="order-btn" id="complete-order-btn">Complete order</button>
+                </section>
+                <section id="card-details-container">
+                    <div class="relative">
+                        <h3 class="card-title">Enter card details</h3>
+                        <button id="cross-btn">X</button>
+                        <form>
+                            <input type="text" id="name" placeholder="Enter your name" class="card-input" required>
+                            <input type="text" placeholder="Enter card number" class="card-input" pattern="[0-9]{16}" required>
+                            <input type="text" placeholder="Enter CVV" class="card-input" pattern="[0-9]{3}" required>
+                            <button class="order-btn" id="pay-btn">Pay</button>
+                        </form>
+                    </div>
+                </section>
+                <section id="thanks-note">
+                    <p>Thanks, <span id="order-giver-name">James</span>! Your order is on its way!</p>
+                </section>
+            </main>
+        </div>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
